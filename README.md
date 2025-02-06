@@ -1,13 +1,17 @@
-Deployment Link: https://inspiring-scone-d72a24.netlify.app/
+Book Showcase
 
-## 🎯 Key Complex Features
+Deployment Link
 
-### 1. Animated Gradient Background
-**Code:**
-css
+Visit the Project
+
+🎯 Key Complex Features
+
+1. Animated Gradient Background
+
+Code:
+
 body {
-  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #fda085, 
-              #f6d365, #c9ffbf, #9be2fe, #e6c1c1);
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #fda085, #f6d365, #c9ffbf, #9be2fe, #e6c1c1);
   background-size: 300% 300%;
   animation: backgroundAnimation 15s infinite;
 }
@@ -19,14 +23,14 @@ body {
   75% { background-position: 50% 0%; }
   100% { background-position: 0% 50%; }
 }
+
 Explanation:
 Creates a continuously moving gradient using CSS animations. The 8-color gradient shifts positions using keyframe animation, creating a dynamic background effect. The background-size (300% 300%) enables smooth color transitions across the viewport.
 
 2. 3D Book Flip Animation
+
 HTML Structure:
 
-html
-Copy
 <div class="book">
   <div class="book-inner">
     <div class="book-front">
@@ -35,11 +39,9 @@ Copy
     <div class="book-back">Click for Details</div>
   </div>
 </div>
-Run HTML
+
 CSS Implementation:
 
-css
-Copy
 .book {
   perspective: 1000px;
 }
@@ -60,21 +62,21 @@ Copy
 .book-back {
   transform: rotateY(180deg);
 }
+
 Key Techniques:
 
-perspective creates 3D space
+perspective creates 3D space.
 
-transform-style: preserve-3d maintains 3D positioning
+transform-style: preserve-3d maintains 3D positioning.
 
-backface-visibility hides reverse side during rotation
+backface-visibility hides the reverse side during rotation.
 
-Smooth transition with 0.8s timing
+Smooth transition with 0.8s timing.
 
 3. Responsive Navigation & Layout
+
 Flexbox Implementation:
 
-css
-Copy
 nav {
   display: flex;
   justify-content: flex-end;
@@ -91,19 +93,19 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
 Features:
 
-Mobile-responsive navigation using Flexbox
+Mobile-responsive navigation using Flexbox.
 
-Wrapping book container for different screen sizes
+Wrapping book container for different screen sizes.
 
-Sticky footer using min-height: 100vh and margin-top: auto
+Sticky footer using min-height: 100vh and margin-top: auto.
 
 4. Interactive Details Dropdown
+
 HTML Semantic Structure:
 
-html
-Copy
 <details>
   <summary>Purchase Links</summary>
   <ul>
@@ -111,10 +113,9 @@ Copy
     <li><a href="https://www.flipkart.com">Flipkart</a></li>
   </ul>
 </details>
-Run HTML
+
 CSS Enhancements:
 
-css
 details {
   cursor: pointer;
   transition: all 0.3s ease;
@@ -129,14 +130,17 @@ details[open] {
   background-color: #f8f9fa;
   border-radius: 5px;
 }
+
 Features:
 
-Native HTML disclosure element with custom styling
+Native HTML disclosure element with custom styling.
 
-Smooth transitions for interactive elements
+Smooth transitions for interactive elements.
 
-Semantic markup for accessibility
+Semantic markup for accessibility.
+
 🖥️ Project Structure
+
 book-showcase/
 ├── index.html
 ├── book1.html
@@ -145,13 +149,16 @@ book-showcase/
     ├── bookfront.jpeg
     ├── book2.jpeg
     └── book3.jpeg
-💻 Quick Start
-Clone repository:
 
-bash
-Copy
+💻 Quick Start
+
+Clone the repository:
+
 git clone https://github.com/JaferaliPW/book-outlook.git
-Open index.html in browser
+
+Open index.html in a browser.
 
 📝 License
+
 MIT License © 2025 Book Showcase
+
